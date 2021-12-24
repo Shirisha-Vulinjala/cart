@@ -14,8 +14,110 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <style>
+            .n1
+            {
+                color: white; 
+            }
+            .n2
+            {   
+                height:40px;
+                margin-top: 15px;
+            }
+            .n3
+            {
+                padding-right: 300px;
+            }
+            .n4
+            {
+                border-color:orange; 
+            }
+            .in
+            {
+                margin-right: 15px;
+            }
+            .n5
+            {
+                color: white;
+                padding-left:4px;
+                
+            }
+            .n6
+            {
+                height: 50px;
+                background-color: navy;
+                
+            }
+            .n7
+            {
+                background-color: black;
+                height: 100px;
+                z-index: 12;
+                
+            }
+            .n8
+            {
+                width: 390px;
+                
+            }
+          
+        </style>
 </head>
 <body>
+        <nav class="navbar navbar-expand-md n6 n7">
+        <div class="container-fluid">
+            <div>
+            <img src="https://www.techefolks.com/imgs/TecheFolks_logo_wh.svg">
+            </div>
+            <div>
+                
+            </div>
+            <i class="far fa-map-marker-alt"></i>
+            <div>   
+                <span class="n1">Hello</span><br>
+                <h6 class="n1">Select your address</h6>
+            </div> 
+            <form class="form">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text n2 n4">All</span>
+                    </div>
+                    <input type="text" class="form-control input n2 n3 n4">
+                    <div class="input-group-append">
+                        <button class="btn btn-warning n2 n4"><i class="fas fa-search"></i></button>
+                    </div>
+
+                </div>
+            </form>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button"><input type="radio" class="in"> English-En</button>
+                  <div class="dropdown-divider"></div>
+                  <button class="dropdown-item" type="button"><input type="radio" class="in">हिन्दी-HI</button>
+                  <button class="dropdown-item" type="button"><input type="radio" class="in">தமிழ்-TI</button>
+                  <button class="dropdown-item" type="button"><input type="radio" class="in">తెలుగు-TE</button>
+                  <button class="dropdown-item" type="button"><input type="radio" class="in">മലയാളം-ML</button>
+                  <button class="dropdown-item" type="button"><input type="radio" class="in">বাংলা-BE</button>
+                  <button class="dropdown-item" type="button"><input type="radio" class="in">मराठी-MR</button>
+                  <div class="dropdown-divider"></div>
+                  You are shoping in TechEFolks.in
+                </div>
+            </div>
+            <div>   
+                <span class="n1">Hello,signin</span><br>
+                <h6 class="n1">Accounts & lists</h6>
+            </div>
+            <div>   
+                <span class="n1">Returns</span><br>
+                <h6 class="n1">& Orders</h6>
+            </div>
+            <i class="fas fa-shopping-cart"></i>
+            <h5 class="n1">cart</h5>
+        </div>   
+    </nav>
     <header>
     <nav class="navbar navbar-expand-md bg-dark">
         <div class="container">
