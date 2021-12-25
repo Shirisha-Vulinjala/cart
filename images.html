@@ -24,7 +24,7 @@
             <li class="nav-item">
                 <a href="#" class="nav-link">hai</a>
             </li>
-            <li class="nav-item navbar-right">
+            <li class="nav-item navbar-right ">
                 <a href="cart.html" class="nav-link cart">
                     <ion-icon name="cart"></ion-icon>cart
                     <span>0</span>
@@ -37,14 +37,39 @@
     </div>
     </nav>
     </header>
+    <!--Modal for Add to cart button-->
+    <div class="modal" id="cartmodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h5 class="modal-title">Details</h5>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+             product details are
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-info" >Add To Cart</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
    
     
 <div class="container-fluid">
     <div class="row ">   
          <!--First product-->
         <div class="column col-sm-12 col-md-6 col-lg-4"  >
-             <a href="#" class="product-link">               
-            <center><img src="https://m.media-amazon.com/images/I/71w6BjcLa6L._AC_UL480_QL65_.jpg" class="product"  ></center>
+             <a href="#" class="product-link"  data-toggle="modal" data-target="#cartmodal">               
+            <center><img src="tabimages/samsungGtabA7.jpg" class="product"  ></center>
         
                 <span>
                 <h6 >Samsung Galaxy Tab A7 26.31 cm(10.4 inch),Slim Metal Body,Quad Speakers with Dolby 
@@ -56,10 +81,10 @@
             </div>
            
             <!--Second product-->
-            <div class="column col-sm-12 col-md-6 col-lg-4">
-                 <a href="#" class="product-link">
+              <div class="column col-sm-12 col-md-6 col-lg-4">
+                 <a href="#" class="product-link"  data-toggle="modal" data-target="#cartmodal">
                 
-                <center><img src="https://m.media-amazon.com/images/I/61NGnpjoRDL._AC_UL480_QL65_.jpg" class="product" ></center>
+                 <center><img src="tabimages\appleipad.jpg" class="product" ></center>
                 
                 <span>
                     <h6 >2021 Apple 10.2-inch (25.91 cm) iPad with A13 Bionic chip (Wi-Fi, 64GB) - Space Grey (9th Generation)
@@ -67,14 +92,14 @@
                     </span>
                 </a>
                 
-                <button type="button" class="btn btn-primary cartButton">Add to Cart</button>
+                 <button type="button" class="btn btn-primary cartButton">Add to Cart</button>
                    
                 </div>
             <!--Third Product-->
                 <div class="column col-sm-12 col-md-6 col-lg-4" >
-                 <a href="#" class="product-link">
+                 <a href="#" class="product-link" data-toggle="modal" data-target="#cartmodal">
                    
-                   <center> <img src="https://m.media-amazon.com/images/I/41jdvXSoeyS._AC_UL480_QL65_.jpg" class="product3"></center>
+                   <center> <img src="tabimages\Lenovotab2ndGen.jpg" class="product3 product"></center>
                 
                     <span>
                         <h6 class="thirdproductdescription">Lenovo Tab M10 HD 2nd Gen (25.65 cm (10.1 inch), 2 GB, 32 GB, Wi-Fi) with Metallic Body and Octa core Processor
@@ -89,10 +114,10 @@
             <!--Fourth product-->
            <div class="column col-sm-12 col-md-6 col-lg-4"  ><hr>
                 <a href="#" class="product-link">               
-               <center><img src="https://m.media-amazon.com/images/I/51S2OfjRkIL._AC_UL480_QL65_.jpg" class="product4"  ></center>
+               <center><img src="tabimages\Lenovo-tab-FHD-plus.jpg" class="product4 product"  ></center>
            
                    <span>
-                   <h6 >Lenovo Tab M10 HD 2nd Gen (25.65 cm (10.1 inch), 2 GB, 32 GB, Wi-Fi) with Metallic Body and Octa core Processor
+                   <h6 >Lenovo Tab M10 FHD Plus Tablet (26.16 cm (10.3-inch), 4GB, 128GB, Wi-Fi + LTE, Volte Calling), Platinum Grey
                    </h6>
                    </span>
                </a>
@@ -103,10 +128,11 @@
                <div class="column col-sm-12 col-md-6 col-lg-4"><hr>
                     <a href="#" class="product-link">
                    
-                   <center><img src="https://m.media-amazon.com/images/I/91SpB-8UCuS._AC_UL480_QL65_.jpg" class="product" ></center>
+                   <center><img src=" tabimages\sam-galaxy-A7-lite.jpg" class="product" ></center>
             
                    <span>
-                       <h6 >Lenovo Tab M10 FHD Plus Tablet (26.16 cm (10.3-inch), 4GB, 128GB, Wi-Fi + LTE, Volte Calling), Platinum Grey
+                       <h6 >Samsung Galaxy Tab A7 Lite 22.05 cm (8.7 inch), Slim Metal Body, Dolby Atmos Sound, RAM 3 GB, ROM 32 GB Expandable, Wi-Fi-only Tablet, Gray
+                           
                        </h6>
                        </span>
                    </a>
@@ -119,16 +145,16 @@
                    <div class="column col-sm-12 col-md-6 col-lg-4" ><hr>
                     <a href="#" class="product-link">
                       
-                      <center> <img src="https://m.media-amazon.com/images/I/712YC1bGhJL._AC_UL480_QL65_.jpg" class="product"></center>
+                      <center> <img src="tabimages\lenovo-yoga-smart.jpg" class="product"></center>
                    
                        <span>
-                           <h6 >Samsung Galaxy Tab A7 Lite 22.05 cm (8.7 inch), Slim Metal Body, Dolby Atmos Sound, RAM 3 GB, ROM 32 GB Expandable, Wi-Fi-only Tablet, Gray
+                           <h6 >Lenovo Yoga Smart Tablet with The Google Assistant 25.65 cm (10.1 inch, 4GB, 64GB, WiFi + 4G LTE), Iron Grey
                            </h6>
                        </span>
                        </a>
                        
                        <button type="button" class="btn btn-primary cartButton" >Add to Cart</button>
-                         </div>pwdp
+                         </div>
                          
                        
        </div>
@@ -137,21 +163,9 @@
     </div>
     </div>
     
-    <script>
-       let array1= document.getElementsByClassName("product");
-       for(let i=0;i<array1.length;i++){
-       array1[i].addEventListener("click",function imgClick(){
-
-        cartButton();
-                     
-       })
-    }
-    function cartButton(){
-        let array2=document.getElementsByClassName('buttoncart');
-        window.alert(array2)
-    }
-
-    </script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="addcart.js">
+        
+    </script>
     
 </body>
