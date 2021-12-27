@@ -14,45 +14,215 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-</head>
+        <style>
+            .n1
+            {
+                background-color: black;
+                width:100%;
+                height: 10%;
+            }
+            .n2
+            {
+                color: white;
+            }
+            .n3
+            {
+                width:500px
+            }
+            .n4
+            {
+                border-color: orange;
+            }
+            .n5
+            {
+                margin-right: 15px;
+            }
+            .n5:hover
+            {
+                background-color: grey;
+            }
+            .n6
+            {
+                background-color:dimgray;
+                height: 50px;    
+            }
+            .n7
+            {
+                color: white;
+                padding-left: 2px;  
+            }
+            .n7:hover{
+                background-color: white;
+            }
+            .n8
+            {
+                text-align: center;
+            
+            }
+            
+            
+        </style>
+    </head>
+
 <body>
+    <nav class="navbar nav n1">
+        <div class="container-fluid">
+            <div>
+                <img src="https://www.techefolks.com/imgs/TecheFolks_logo_wh.svg">
+            </div>
+            <div class="n2">
+                <span>Hello</span><br>
+                <span><h6 class="n2">Select your address</h6></span>
+            </div>
+            <div>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="dropdown">
+                            <button class="input-group-text n4 dropdown-toggle" id="menu1" data-toggle="dropdown">All</button>
+                            <div class="dropdown-menu" aria-labelledby="menu1">
+                                <form> 
+                                    <button class="dropdown-item" type="button"><input class="n5" name="value"><a href="#">All categories</a></button>
+                                    <div class="dropdown-divider"></div>
+                                    <span class="dropdown-item n5">Deals</span>
+                                    <span class="dropdown-item n5">Alexa skills</span>
+                                    <span class="dropdown-item n5">Amazon Devices</span>
+                                    <span class="dropdown-item n5">Amazon Fashion</span>
+                                    <span class="dropdown-item n5">Amazon Fresh</span>
+                                    <span class="dropdown-item n5">Appliances</span>
+                                    <span class="dropdown-item n5">Apps & Games</span>
+                                    <span class="dropdown-item n5">Baby</span>
+                                    <span class="dropdown-item n5">Beauty</span>
+                                    <span class="dropdown-item n5">Books</span>
+                                    <span class="dropdown-item n5">Car & Motorbike</span>
+                                    <span class="dropdown-item n5">Clothing & Accessories</span>
+                                    <span class="dropdown-item n5">Collectiables</span>
+                                    <span class="dropdown-item n5">Computer & Accessories</span>
+                                    <span class="dropdown-item n5">Electronics</span>
+                                    <span class="dropdown-item n5">Furniture</span>
+                                    <span class="dropdown-item n5">Garden & Outdoors</span>
+                                    <span class="dropdown-item n5">Gift Cards</span>
+                                    <span class="dropdown-item n5">Grocery & Gourmet Foods</span>
 
-    <header>
-        <nav class="navbar navbar-expand-md bg-dark">
-           <div class="container">
-        
-            <ul class="navbar nav">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">hai
 
+
+                                    </form>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="search" class="n3 n4">
+                    <div class="input-group-append">
+                        <button class="btn btn-warning n10"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="Menu2" data-toggle="dropdown">
+                  Language
+                </button>
+                <div class="dropdown-menu" aria-labelledby="Menu2">
+                  <form> 
+                  <button class="dropdown-item" type="button"><input type="radio" class="n5" name="value"><a href="#">English-En</a></button>
+                  <div class="dropdown-divider"></div>
+                  <button class="dropdown-item" type="button"><input type="radio" class="n5" name="value"><a href="#">हिन्दी-HI</a></button>
+                  <button class="dropdown-item" type="button"><input type="radio" class="n5" name="value"><a href="#">தமிழ்-TI</a></button>
+                  <button class="dropdown-item" type="button"><input type="radio" class="n5" name="value"><a href="#">తెలుగు-TE</a></button>
+                  <button class="dropdown-item" type="button"><input type="radio" class="n5" name="value"><a href="#">മലയാളം-ML</a></button>
+                  <button class="dropdown-item" type="button"><input type="radio" class="n5" name="value"><a href="#">বাংলা-BE</a></button>
+                  <button class="dropdown-item" type="button"><input type="radio" class="n5" name="value"><a href="#">मराठी-MR</a></button>
+                  </form>
+                  <div class="dropdown-divider"></div>
+                  You are shoping in TechEFolks.in
+                </div>
+            </div>
+            <div>
+                <div class="dropdown">
+                    <span class="dropdown-toggle n2" id="Menu2" data-toggle="dropdown">
+                      <a>Hello,Sign in<br>
+                      Accounts&Lists</a>
+                    </span>
+                    <div class="dropdown-menu" aria-labelledby="Menu2">
+                      <span class="dropdown-item"><button class="btn btn-warning">Sign-in</button></span>
+                      <span>New customer? Start here</span>
+                    </div>
+                </div>
+            </div>
+            <div>   
+                <span class="n2">Returns</span><br>
+                <span class="n2">& Orders</span>
+            </div>
+            <div>
+                <li class="nav-item navbar-right">
+                    <a href="cart.html" class="nav-link cart">
+                        <ion-icon name="cart" class="n2">  </ion-icon>
+                        <span class="n2">0</span>
+                        <span class="n2">cart</span>
                     </a>
                 </li>
-                <li class="nav-item navbar-right ">
-                   <a href="cart.html" class="nav-link cart">
-                      <ion-icon name="cart"></ion-icon>cart
-                      <span>0</span>
-                   </a>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-md n6">
+        <div class="container-fluid">
+            <ul class="navbar nav">
+                <li>
+                    <a href="#" class="nav-link n7">Bestsellers</a>
                 </li>
-                <li class="nav-item">
-                   <a href="#" class="nav-link">welcome</a>
-               </li>
-           </ul>
-         </div>
-     </nav>
-   </header>
+                <li>
+                    <a href="#" class="nav-link n7">Mobiles</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link n7">Customer Service</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link n7">Electronics</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link n7">Fashion</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link n7">Today's Deals</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link n7">Prime</a>
+                </li>
+                <li>
+                    <a href="#"  class="nav-link n7">Home Kitchen</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link n7">Amazon Pay</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link n7">Computers</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link n7">New Releases</a>
+                </li>
+                <li>
+                    <h5 class="n2 n8">Shopping is easy|Download the app</h5>
+                </li>
+            </ul>
+           
+        </div>
+        
+    </nav>
+    
 
    <div class="products-container">
+       <div class="row">
        <div class="product-header">
            <h5 class="product-title">Product</h5>
            <h5 class="price">Price</h5>
            <h5 class="quantity">Quantity</h5>
            <h5 class="total">Total</h5>
        </div>
+       </div>
        <div class="productimages">
 
        </div>
 
    </div>
+
+   
    <script src="addcart.js"> 
    </script>
 

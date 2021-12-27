@@ -40,7 +40,7 @@ h6{
    color: #000000 ;
    justify-content: center;
 }
-.container-fluid{
+.c1{
     
     margin-top: 100px;
     margin-left: 100px;
@@ -53,59 +53,87 @@ h6{
 
 /*----------  Cart page styles----------*/
 .products-container{
-    max-width:650px;
+    max-width:800px;
     justify-content: space-around;
     margin:0 auto;
     margin-top: 50px;
 
 }
+
 .products-container ion-icon{
+    font-size: 20px;
+    color: blue;
 
 }
 .product-header{
     width: 100%;
-    max-width: 650px;
+   
     display: flex;
-    justify-content: flex-start;
+   
     border-bottom: 4px solid lightgray;
-    margin:0 auto;
+   
     
 }
 .product-title{
-    width:45%;
+    width:25%;
 
 }
+
 .price{
     width: 15%;
     display: flex;
     align-items: center;
+    
 
 }
+
 .quantity{
-    width: 30%;
+    width: 25%;
     display: flex;
     align-items: center;
 
 
 }
+
 .total{
-    width: 10%;
+    width: 25%;
     display: flex;
     align-items: center;
 
 }
 .productimages{
-    width: 45%;
-    display: flex;
-    flex:wrap;
+    width: 100%;
+  
+    
 
 
 }
+
 .productimages ion-icon{
     cursor:pointer;
 }
  .productimages img{
-     width:75px;
+     width:40px;
  }
+ .display{
+     display: flex;
+ }
+ .display p{
+     justify-content: center;
+     width:35%;
+ }
+/* <!-- totalCost container styling--> */
 
+.overAllCostContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding:10px;
+}
+.overAllCostTitle{
+    width:25%;
+}
+.overAllCost{
+    width:25%;
+}
  
