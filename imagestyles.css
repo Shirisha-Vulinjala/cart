@@ -4,6 +4,56 @@
     box-sizing: border-box;
     
 }
+
+/* styles for navbar */
+.n1
+{
+    background-color: black;
+    width:100%;
+    height: 10%;
+}
+.n2
+{
+    color: white;
+}
+.n3
+{
+    width:400px
+}
+.n4
+{
+    border-color: orange;
+}
+.n5
+{
+    margin-right: 15px;
+}
+.n5:hover
+{
+    background-color: grey;
+}
+.n6
+{
+    background-color:dimgray;
+    height: 50px;    
+}
+.n7
+{
+    color: white;
+    padding-left: 2px;  
+}
+.n7:hover{
+    background-color: white;
+}
+.n8
+{
+    padding-top: 5px;
+
+}
+button:focus{outline: none;}
+
+
+/* ----------------------*/
  .row{
      display:flex;
      justify-content:space-between;
@@ -94,6 +144,7 @@ h6{
 
 
 }
+
 
 .total{
     width: 25%;
