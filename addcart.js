@@ -244,9 +244,10 @@ function quantityDecrease( )
                         document.getElementsByClassName('totalprice')[i].innerHTML=1*itemCost;  
                      
                         // updating cart quantity in local storage 
-                        let cartItems=JSON.parse(localStorage.productsInCart);
+                        let cartItems=JSON.parse(localStorage.getItem('productsInCart'));
                         let productKeys=Object.keys(cartItems);
-                        cartItems[productKeys[i]].incart=0;
+                        console.log(productKeys[i])
+                        cartItems[productKeys[i]].incart=1;
                         localStorage.productsInCart=JSON.stringify(cartItems);                   
                         
                         }
@@ -254,9 +255,11 @@ function quantityDecrease( )
                 else
                        {                     
                          document.getElementsByClassName("value")[i].innerHTML=value[i];
-                         document.getElementsByClassName('totalprice')[i].innerHTML=value[i]*itemCost;   
-                         let cartItems=JSON.parse(localStorage.productsInCart);
+                         document.getElementsByClassName('totalprice')[i].innerHTML=value[i]*itemCost; 
+                            // updating cart quantity in local storage   
+                         let cartItems=JSON.parse(localStorage.getItem('productsInCart'));
                          let productKeys=Object.keys(cartItems);
+                         console.log(productKeys[i]);
                          cartItems[productKeys[i]].incart=value[i];
                          localStorage.productsInCart=JSON.stringify(cartItems);                                        
                        } 
@@ -300,6 +303,14 @@ function quantityIncrease( )
             values[i]++;
             document.getElementsByClassName('value')[i].innerHTML=values[i];
             document.getElementsByClassName('totalprice')[i].innerHTML=values[i]*price[i];
+
+             // updating cart quantity in local storage   
+             let cartItems=JSON.parse(localStorage.getItem('productsInCart'));
+             let productKeys=Object.keys(cartItems);
+             console.log(productKeys[i]);
+             cartItems[productKeys[i]].incart=values[i];
+             localStorage.productsInCart=JSON.stringify(cartItems);  
+             // calling functions to update the changes
             overAllAmount() ;
             quantityDecrease();
             
