@@ -50,9 +50,9 @@ for(let i=0;i<cartarray.length;i++)
 }
 function onLoadCartNumbers()
 {   // independent of event i.e; gets executed when the page loads
+    
     let productNumbers=localStorage.getItem('cartNumbers');
-    var OverallPrice=document.getElementsByClassName("overAllCost").innerHTML;
-      if(productNumbers)
+    if(productNumbers)
     { 
         if(productNumbers==-1)
         {
@@ -64,6 +64,8 @@ function onLoadCartNumbers()
         document.querySelector('.cart span').textContent=0;
 
     }
+    
+   
     
 
 }
@@ -77,14 +79,14 @@ function cartNumbers(product){
 
     if(productNumbers)
    {
-    if(cartItems[product.tag]==undefined)  
+      if(cartItems[product.tag]==undefined)  
            {  
            
               localStorage.setItem('cartNumbers',productNumbers+1);
       
             document.querySelector('.cart span').textContent= productNumbers+1;
            }
-      else
+       else
        {
              localStorage.setItem('cartNumbers',productNumbers);      
              document.querySelector('.cart span').textContent= productNumbers;
@@ -92,7 +94,8 @@ function cartNumbers(product){
    }
       
 
-else{
+ else
+ {
     localStorage.setItem('cartNumbers',1);
     document.querySelector('.cart span').textContent=1;
 }
@@ -144,6 +147,7 @@ function totalCost(product)
 }
 // function for displaying local storage data into cart page
 function displayCart()
+
 {
     let cartItems=localStorage.getItem("productsInCart");
     let cartCost=localStorage.getItem('totalCost');
@@ -234,10 +238,11 @@ function quantityDecrease( )
                  itemCost=parseInt(price[i]);                      
                  let updatedcost=value[i]*itemCost;
                  value[i]--;
-                if(value[i]<0)
+                if(value[i]<1)
                        {
-                        document.getElementsByClassName("value")[i].innerHTML=0;
-                        document.getElementsByClassName('totalprice')[i].innerHTML=0*itemCost;   
+                        document.getElementsByClassName("value")[i].innerHTML=1;
+                        document.getElementsByClassName('totalprice')[i].innerHTML=1*itemCost;  
+                     
                         // updating cart quantity in local storage 
                         let cartItems=JSON.parse(localStorage.productsInCart);
                         let productKeys=Object.keys(cartItems);
@@ -307,7 +312,7 @@ function quantityIncrease( )
 }
 
 /// updating OverAllprice for increment and decrement in quantity
-function overAllAmount(reducedquantityprice,index)
+function overAllAmount(reducedquantityprice)
 {
     var reducedprice=Number(reducedquantityprice);
         
@@ -414,12 +419,13 @@ function productRemove( )
  }
   
 //functions to execute when the page loads.
-onLoadCartNumbers();
 displayCart();
+onLoadCartNumbers();
 
 quantityDecrease(),quantityIncrease();
 
 productRemove();
+
 
 
  
