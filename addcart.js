@@ -46,7 +46,7 @@ for(let i=0;i<cartarray.length;i++)
         cartNumbers(products[i]);
         totalCost(products[i]);
 
-    })
+    },{once:true})
 }
 function onLoadCartNumbers()
 {   // independent of event i.e; gets executed when the page loads
