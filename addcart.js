@@ -436,8 +436,8 @@ onLoadCartNumbers();
 quantityDecrease(),quantityIncrease();
 
 productRemove();
-
-
-
- 
-    
+ function reload()
+ {
+     window.location.reload(true);
+     localStorage.clear();
+ }

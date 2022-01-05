@@ -107,12 +107,17 @@
             </div>
             <div>
                 <li class="nav-item navbar-right">
-                    <a href="cart.html" class="nav-link cart">
+                    <a  class="nav-link cart" onclick="window.location.href='cart.html'" >
                         <ion-icon name="cart" class="n2">  </ion-icon>
                         <span class="n2">0</span>
                         <span class="n2">cart</span>
                     </a>
                 </li>
+            </div>
+            <div>
+                <a id="reload" class="text text-white n10" onclick="reload();">
+                    Refresh the page
+                </a>
             </div>
             
         </div>
@@ -220,6 +225,8 @@
           </a>
           <h5 class="text-danger">
             <span>
+
+                
             <i class="fa fa-rupee"></i>
             </span>30,900
           </h5>
