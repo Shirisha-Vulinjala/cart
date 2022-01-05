@@ -50,6 +50,11 @@
     padding-top: 5px;
 
 }
+.n10
+{
+    color: white;
+    
+}
 button:focus{outline: none;}
 
 
@@ -128,6 +133,7 @@ h6{
     width:25%;
 
 }
+
 
 .price{
     width: 15%;
