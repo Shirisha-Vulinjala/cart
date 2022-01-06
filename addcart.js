@@ -263,7 +263,7 @@ function quantityDecrease( )
                          cartItems[productKeys[i]].incart=value[i];
                          localStorage.productsInCart=JSON.stringify(cartItems);                                        
                        } 
-                 overAllAmount(price[i]); 
+                 overAllAmount(); 
                  quantityIncrease();     
                    
                      
@@ -323,12 +323,10 @@ function quantityIncrease( )
 }
 
 /// updating OverAllprice for increment and decrement in quantity
-function overAllAmount(reducedquantityprice)
+function overAllAmount()
 {
-    var reducedprice=Number(reducedquantityprice);
-        
-    let overAllCost=document.querySelectorAll('.totalprice');
-    
+           
+    let overAllCost=document.querySelectorAll('.totalprice');    
     var array=[];
     var sum=0;
     for(let i=0;i<overAllCost.length;i++)
@@ -338,16 +336,9 @@ function overAllAmount(reducedquantityprice)
 
 
     }
-    if(reducedprice)
-    {
-    document.querySelector('.overAllCost').innerHTML=(sum+reducedprice)-reducedprice;  
-    localStorage.totalCost=JSON.stringify((sum+reducedprice)-reducedprice);
-    }
-    else{
-        document.querySelector('.overAllCost').innerHTML=sum;
-        localStorage.totalCost=JSON.stringify(sum);
-
-    }
+   
+    document.querySelector('.overAllCost').innerHTML=sum;  
+    localStorage.totalCost=JSON.stringify(sum);
 }
 // function to update overAllPrice when the product is removed
 function overAllAmount1(reducedquantityprice,index)
